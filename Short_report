@@ -9,7 +9,7 @@ Analytics	Pandas + Plotly	Rapid data manipulation; seamless integration with Pyt
 2. Key Design Decisions
 Dual-Mode API Endpoints: Supported both GET (browser) and POST (programmatic) requests for /ask endpoint.
 
-Caching: Used functools.lru_cache for frequent analytics queries (e.g., monthly revenue).
+
 
 Error Handling: Structured HTTP codes (400/500) with Pydantic validation for input safety.
 
@@ -29,11 +29,9 @@ FAISS Indexing Time	2h	45m	Parallel embedding generation
 GitHub File Size Limit:
 FAISS index (112MB) exceeded 100MB limit → Resolved using Git LFS.
 
-Import Errors:
-ModuleNotFoundError: No module named 'src' → Fixed via absolute imports and sys.path adjustments.
 
-API Compatibility:
-FastAPI-to-Flask migration caused CORS/Pydantic issues → Added flask-cors and manual JSON validation.
+
+
 
 Future Improvements
 Real-Time Updates: Integrate Kafka/Redis for live FAISS index updates.
