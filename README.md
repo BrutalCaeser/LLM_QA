@@ -14,6 +14,6 @@
 
 ### Installation
 ```bash
-git clone https://github.com/yourusername/LIM_QA.git
-cd LIM_QA
+git clone [https://github.com/yourusername/LIM_QA.git](https://github.com/BrutalCaeser/LLM_QA.git)
+cd LLM_QA
 pip install -r requirements.txt
